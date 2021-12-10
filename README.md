@@ -4,7 +4,7 @@ Lista de comandos docker
 <h1>Lista de comandos docker</h1>
 
 
-<hr/>
+
 docker attach  – Acessar dentro do container e trabalhar a partir dele.
 docker build   – A partir de instruções de um arquivo Dockerfile eu possa criar uma imagem.
 docker commit  – Cria uma imagem a partir de um container.
