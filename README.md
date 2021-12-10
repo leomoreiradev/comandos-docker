@@ -46,5 +46,6 @@ docker update  – Atualiza a configuração de um ou mais containers.<br>
 docker version – Exibe as versões de API, Client e Server do host.<br>
 docker volume  – Gerenciamento dos volumes no Docker.<br>
 docker wait    – Aguarda o retorno da execução de um container para iniciar esse container.<br>
+docker run -d  - Roda a imagem em background sem ocupar o terminal
 
 Obs.: É possível ver todos os comandos que o Docker possui, tendo o docker instalado, basta digitar no terminal docker --help
