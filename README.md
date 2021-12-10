@@ -47,7 +47,7 @@ docker version – Exibe as versões de API, Client e Server do host.<br>
 docker volume  – Gerenciamento dos volumes no Docker.<br>
 docker wait    – Aguarda o retorno da execução de um container para iniciar esse container.<br>
 docker run -d  – Roda a imagem em background sem ocupar o terminal. <br>
-docker stop <CONTAINER ID>  – Para a imagem dona do <CONTAINER ID> que está rodando
+docker stop CONTAINER ID  – Para a imagem dona do CONTAINER ID que está rodando
 
 
 Obs.: É possível ver todos os comandos que o Docker possui, tendo o docker instalado, basta digitar no terminal docker --help
