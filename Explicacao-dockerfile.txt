@@ -1,0 +1,22 @@
+FROM node   -- Cria uma imagem a partir do node
+
+WORKDIR /usr/src/app  -- Definindo diretorio de trabalho no container
+
+COPY package.json . -- Copiando package.json para WORKDIR
+
+RUN npm install     -- Instalando os pacotes de npm no WORKDIR dentro do  container
+
+COPY . .            -- Primeiro (COPY .) copia todos os arquivos da aplicação, segundo (.) = pro (WORKDIR) 
+
+EXPOSE 3000        -- Expoe a aplicação na porta 3000 
+
+CMD ["node","index.js"]  --Da start na aplicação 
+
+=======================================================================
+1 - Para criar a imagem usamos o comando = docker build . 
+2 - Para rodar um container da imagem criada = docker run -d -p 3000:3000 --name node-docker 1a03e457a310 <-- image id
+Parando o container = docker stop <id do container>
+Quando atualizar algo no projeto devemos repetir o processo a partir do passo 1 e 2
+Para buildar ja dando nome a imagem usa o "-t" = docker build -t node-docker-image .
+Para remover container = docker rm <id do container>
+Para remover imagem = docker rmi <nome da imagem>
